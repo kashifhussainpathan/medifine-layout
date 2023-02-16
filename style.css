@@ -1,0 +1,286 @@
+/* Font family */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+body {
+    max-width: 1440px;
+    background-color: #f0f4f5;
+    overflow: hidden;
+    margin: auto;
+}
+
+/* Styling Nav */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    padding: 0 5%;
+}
+
+nav div:first-child img {
+    width: 55px;
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+nav div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin-right: 50px;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    color: #179563;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+}
+
+/* Styling Main */
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85vh;
+}
+
+main section {
+    width: 50%;
+}
+
+.topAngle {
+    width: 25px;
+}
+
+.leftSection h1 {
+    font-size: 70px;
+}
+
+.leftSection p {
+    color: #7c7c7c;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+
+.leftSection {
+    margin-left: 5%;
+    position: relative;
+}
+
+.bottomAngle {
+    width: 25px;
+    position: absolute;
+    right: 25px;
+}
+
+.stethoscope {
+    position: absolute;
+    width: 90%;
+    top: -60px;
+    right: -25%;
+    z-index: -1;
+}
+
+.mouse {
+    position: absolute;
+    right: -30px;
+    bottom: 0;
+    width: 30px;
+}
+
+.leftSection button {
+    background-color: #20bc7e;
+    padding: 15px 40px;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    font-size: 25px;
+    border-radius: 40px;
+    transition: all .3s ease-in-out;
+}
+
+.leftSection button:hover {
+    box-shadow: 0px 2px 8px 0px #aaa;
+}
+
+/* Styling the right section */
+.greenBox,
+.yellowBox {
+    position: absolute;
+    right: 0;
+}
+
+.greenBox {
+    width: 35%;
+    bottom: 30px;
+}
+
+.yellowBox {
+    width: 30%;
+    bottom: 50px;
+}
+
+.doctor {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 90%;
+}
+
+/* ############### About ################## */
+.mainAbout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 85vh;
+    padding: 0 5%;
+}
+
+.description {
+    width: 50%;
+    text-align: center;
+}
+
+.description h1 {
+    margin-bottom: 20px;
+    color: #20BC7E;
+}
+
+.description p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.achievement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.achievementCard {
+    width: 200px;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px #b7b7b7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid transparent;
+    transition: all 0.4s ease-in-out;
+}
+
+.achievementCard:hover {
+    border: 3px solid #179563;
+}
+
+.achievementCard span {
+    font-size: 25px;
+    font-weight: 700;
+    color: #20BC7E;
+}
+
+.achievementCard p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Styling Form */
+.mainForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainForm form {
+    width: 350px;
+    box-shadow: 1px 1px 15px #b7b7b7;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.mainForm form h1 {
+    text-align: center;
+}
+
+.mainForm form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainForm form div label {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.mainForm form div input {
+    border: transparent;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.mainForm form div textarea {
+    border: transparent;
+    border-radius: 10px;
+    padding: 5px 10px;
+    resize: none;
+    height: 100px;
+}
+
+.mainForm button {
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    background: #20BC7E;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.mainForm button:hover {
+    box-shadow: 0px 2px 8px 0px #aaa;
+}
